@@ -1,0 +1,17 @@
+label {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: var(--text-color);
+}
+.ant-picker-input {
+  color: var(--text-color);
+  ::placeholder {
+    color: var(--text-color) !important;
+  }
+  .ant-picker-suffix {
+    color: var(--text-color);
+  }
+}
+.ant-picker {
+  background-color: var(--background-color) !important;
+}

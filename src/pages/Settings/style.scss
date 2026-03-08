@@ -1,0 +1,73 @@
+.settings-page {
+  padding: 24px;
+  color: white;
+
+  .settings-title {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .settings-container {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+  }
+
+  .settings-tabs {
+    width: 100%;
+
+    .ant-tabs-nav {
+      margin-right: 24px;
+    }
+
+    .ant-tabs-tab {
+      color: #fff !important;
+    }
+
+    .ant-tabs-tab-active {
+      background: #2a2a2a;
+      border-radius: 8px;
+    }
+
+    .ant-tabs-content-holder {
+      background: transparent;
+    }
+  }
+
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+
+    label {
+      color: #ccc;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .ant-input,
+    .select .ant-select-selector {
+      background: transparent;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 8px;
+    }
+
+    .logo-uploader {
+      width: 80px;
+      height: 80px;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+
+      .upload-placeholder {
+        color: #444;
+      }
+    }
+  }
+}

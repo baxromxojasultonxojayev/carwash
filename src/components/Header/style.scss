@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .theme-switch {
+    background-color: #f5a623;
+  }
+
+  .account-box {
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    transition: background 0.3s;
+
+    .account-box-title {
+      padding: 0;
+      margin: 0;
+    }
+    &:hover {
+      background-color: var(--hover-bg);
+    }
+  }
+}
+.ant-modal-content {
+  .ant-modal-header {
+    background-color: transparent !important;
+    .ant-modal-title {
+      color: var(--text-color) !important;
+    }
+  }
+  .ant-modal-body {
+    .ant-input-password {
+      .ant-input-suffix {
+        .ant-input-password-icon {
+          background-color: var(--background-color);
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}

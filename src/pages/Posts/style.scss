@@ -1,0 +1,39 @@
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  .add-device-modal {
+    background: transparent !important;
+    background-color: red;
+    border-radius: 12px;
+    color: #ffffff;
+    max-height: 50vh;
+    overflow-y: scroll;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  .add-button {
+    background-color: #ffcc00;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+
+    &:hover {
+      background-color: #e6b800;
+    }
+  }
+}
+.ant-modal-content {
+  background: var(--card-bg) !important;
+  .ant-modal-close {
+    color: var(--text-color);
+  }
+  .device-form {
+    margin-top: 50px;
+  }
+}

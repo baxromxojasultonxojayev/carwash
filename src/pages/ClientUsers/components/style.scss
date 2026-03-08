@@ -1,0 +1,49 @@
+.add-device-modal {
+  .ant-modal-content {
+    background-color: var(--background-color) !important;
+    border-radius: 16px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .ant-modal-body {
+    padding: 24px;
+  }
+
+  .user-form-content {
+    background-color: var(--background-color) !important;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    color: var(--text-color);
+    margin-top: 20px;
+
+    .section-title {
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .field-label {
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 12px;
+      color: var(--text-color);
+    }
+
+    .custom-input {
+      margin-top: 4px;
+      margin-bottom: 16px;
+      height: 40px;
+      background: transparent;
+      color: var(--text-color);
+
+      input {
+        background: transparent;
+        color: var(--text-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.device-service-modal {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+
+  .section-title {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.ds-form {
+  .ds-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 16px;
+  }
+
+  .ds-col-2 {
+    grid-column: span 2;
+  }
+
+  .ds-field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 13px;
+      color: var(--text-color);
+      margin-bottom: 6px;
+    }
+
+    input {
+      height: 38px;
+      padding: 8px 12px;
+      border: 1px solid #2f2f35;
+      background-color: var(--background-color) !important;
+      color: var(--text-color);
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.15s ease;
+
+      &::placeholder {
+        color: var(--text-color);
+      }
+
+      &:focus {
+        border-color: #1777ff;
+      }
+    }
+  }
+
+  .ds-checkbox {
+    .ds-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #1777ff; /* modern browsers */
+      }
+
+      span {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .ds-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 18px;
+  }
+}
+
+/* Responsiv */
+@media (max-width: 680px) {
+  .ds-form .ds-grid {
+    grid-template-columns: 1fr; /* mobil – 1 ustun */
+  }
+  .ds-form .ds-col-2 {
+    grid-column: span 1;
+  }
+}

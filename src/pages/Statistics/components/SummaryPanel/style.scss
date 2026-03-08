@@ -1,0 +1,69 @@
+.summary-grid {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 14px;
+}
+
+.summary-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color, #fff);
+}
+
+.summary-dates {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.summary-total {
+  text-align: right;
+}
+
+.summary-total-label {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.summary-total-value {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 2px;
+  color: #ffd666;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.summary-card-label {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.summary-card-val {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 16px;
+}

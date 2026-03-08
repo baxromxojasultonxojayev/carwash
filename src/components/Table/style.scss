@@ -1,0 +1,86 @@
+.dynamic-table {
+  background-color: var(--background-color) !important;
+  border-radius: 10px;
+  padding: 20px;
+  color: #ffffff;
+  border: 2px solid rgb(253, 228, 228);
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+
+    .add-button {
+      background-color: #ffcc00;
+      color: #000000;
+      font-weight: bold;
+      border: none;
+
+      &:hover {
+        background-color: #e6b800;
+      }
+    }
+  }
+
+  .ant-table {
+    background-color: transparent;
+
+    .ant-table-thead > tr > th {
+      background-color: var(--background-color) !important;
+      color: var(--text-color);
+      font-weight: bold;
+      border-bottom: 1px solid #444444;
+    }
+
+    .ant-table-tbody > tr > td {
+      background-color: var(--background-color) !important;
+      border-bottom: 1px solid #444444;
+      color: var(--text-color);
+    }
+  }
+
+  .status-cell {
+    display: flex;
+    align-items: center;
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  .power-bar {
+    width: 100px;
+    height: 8px;
+    background-color: #444;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .power-bar-fill {
+      height: 100%;
+      background-color: #ffcc00;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    svg {
+      font-size: 18px;
+
+      &:hover {
+        color: #ffcc00;
+      }
+    }
+  }
+}

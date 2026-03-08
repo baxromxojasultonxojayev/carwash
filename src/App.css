@@ -1,0 +1,44 @@
+/* Dark Mode */
+body.dark-mode {
+  --background-color: #001529;
+  --header-bg: #001529;
+  --text-color: #ffffff;
+  --card-bg: #1f1f1f;
+  --button-bg: #ff7a29;
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --active-item-bg: rgba(243, 241, 239, 0.596);
+  --active-text-color: #000000;
+  --border-color: rgba(243, 241, 239, 0.596);
+}
+
+/* Light Mode */
+body.light-mode {
+  --background-color: #f5f5f5;
+  --header-bg: #ffffff;
+  --text-color: #000000; /* Qorong‘i, ko‘rinadigan qilib o‘zgartirildi */
+  --card-bg: #ffffff;
+  --button-bg: #ff7a29;
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --active-text-color: #ffffff;
+  --active-item-bg: rgba(9, 1, 1, 0.627);
+  --border-color: rgba(62, 62, 61, 0.596);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  --hover-bg: rgba(0, 0, 0, 0.05);
+  --active-item-bg: rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+}
+
+.ant-layout {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+}

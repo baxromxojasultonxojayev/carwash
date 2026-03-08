@@ -1,0 +1,11 @@
+.client-header {
+  //   display: flex;
+  justify-content: space-between;
+  .add-client {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 30px;
+  }
+}

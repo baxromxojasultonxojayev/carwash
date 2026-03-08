@@ -1,0 +1,97 @@
+.custom-sidebar {
+  background-color: var(--background-color) !important; /* Theme bilan mos */
+  box-shadow: 0 6px 16px rgba(220, 216, 216, 0.15);
+
+  .logo {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--divider-color);
+    margin-bottom: 10px;
+  }
+
+  .custom-menu {
+    background-color: transparent;
+
+    .ant-menu-item {
+      border-radius: 8px;
+      color: var(--text-color) !important;
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: var(--hover-bg);
+      }
+
+      &.ant-menu-item-selected {
+        background-color: var(--active-item-bg) !important;
+        color: var(--active-text-color) !important;
+
+        a {
+          color: var(--active-text-color) !important;
+        }
+
+        .anticon {
+          color: var(--active-text-color) !important;
+        }
+      }
+
+      a {
+        color: inherit !important;
+      }
+
+      .anticon {
+        font-size: 18px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.ant-layout-sider-trigger {
+  background: var(--background-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  .anticon.anticon-left {
+    color: var(--text-color) !important;
+  }
+}
+
+.custom-menu .menu-link.spread {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .menu-lock-right {
+    font-size: 12px;
+  }
+}
+
+.menu-lock-right {
+  font-size: 10px;
+  opacity: 0.85;
+  margin-left: 8px;
+}
+
+.custom-menu .ant-menu-item .anticon + .menu-link {
+  margin-left: 0;
+}
+
+.ant-modal-content {
+  .ant-modal-header {
+    background-color: transparent !important;
+    .ant-modal-title {
+      color: var(--text-color) !important;
+    }
+  }
+  .ant-modal-body {
+    .ant-input-password {
+      .ant-input-suffix {
+        .ant-input-password-icon {
+          background-color: var(--background-color);
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}

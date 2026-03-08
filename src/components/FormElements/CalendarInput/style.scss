@@ -1,0 +1,25 @@
+.calendar-input {
+  width: 100%;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid #555;
+  border-radius: 6px;
+
+  .ant-picker-input > input {
+    color: var(--text-color);
+    background-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #f5a623;
+  }
+
+  .ant-picker-suffix {
+    color: var(--text-color);
+  }
+
+  .ant-picker-clear {
+    background-color: transparent;
+  }
+}

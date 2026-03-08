@@ -1,0 +1,31 @@
+.auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: var(--background-color) !important;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+
+  h2 {
+    text-align: center;
+    color: #ff7a29;
+    margin-bottom: 24px;
+  }
+
+  .ant-form-item-label label {
+    color: #ccc;
+  }
+
+  .ant-input,
+  .ant-input-password {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+  }
+
+  .ant-btn-primary {
+    background: #ff7a29;
+    border: none;
+  }
+}

@@ -1,0 +1,35 @@
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 16px;
+      color: var(--text-color);
+      margin-bottom: 4px;
+    }
+
+    .ant-picker,
+    .ant-select {
+      width: 200px;
+      margin-top: 10px;
+      .ant-picker-input > input {
+        color: var(--text-color);
+        cursor: pointer;
+      }
+      input::placeholder {
+        color: var(--text-color);
+      }
+    }
+    .ant-picker-clear {
+    }
+    .anticon {
+      color: var(--text-color);
+    }
+  }
+}

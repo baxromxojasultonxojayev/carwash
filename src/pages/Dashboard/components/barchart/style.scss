@@ -1,0 +1,97 @@
+/* src/pages/Dashboard/components/SummaryPanel/style.scss */
+
+.summary-grid {
+  display: grid;
+  gap: 16px;
+
+  .summary-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color) !important;
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: var(--text-color);
+
+    .summary-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text-color);
+    }
+
+    .summary-dates {
+      opacity: 0.8;
+      color: var(--text-color);
+    }
+
+    .summary-total {
+      text-align: right;
+      color: var(--text-color);
+
+      &-label {
+        font-size: 12px;
+        opacity: 0.7;
+        color: var(--text-color);
+      }
+
+      &-value {
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    color: var(--text-color);
+
+    .summary-card {
+      background-color: var(--background-color) !important;
+      border-radius: 12px;
+      padding: 12px;
+
+      &-label {
+        font-size: 12px;
+        opacity: 0.75;
+        margin-bottom: 6px;
+      }
+
+      &-val {
+        font-size: 18px;
+        font-weight: 700;
+
+        &.providers {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .summary-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    .chart-card {
+      background-color: var(--background-color) !important;
+      border-radius: 12px;
+      padding: 12px 12px 4px;
+
+      .chart-title {
+        font-weight: 600;
+        margin-bottom: 8px;
+        opacity: 0.9;
+        color: var(--text-color);
+      }
+
+      .chart-body {
+        height: 260px;
+      }
+    }
+  }
+}

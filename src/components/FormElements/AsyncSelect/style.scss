@@ -1,0 +1,47 @@
+.ant-select {
+  width: 100%;
+  .ant-select-selector {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+    transition: all 0.3s;
+  }
+
+  .ant-select-selection-placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+  }
+
+  .ant-select-selection-item {
+    color: var(--text-color);
+  }
+
+  .ant-select-arrow {
+    color: var(--text-color);
+  }
+
+  .ant-select-dropdown {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+
+    .ant-select-item {
+      color: var(--text-color);
+
+      &:hover {
+        background-color: var(--hover-bg);
+      }
+    }
+
+    .ant-select-item-option-selected {
+      background-color: var(--active-item-bg);
+      color: var(--active-text-color);
+    }
+  }
+}
+
+.ant-select-selection-item-remove {
+  color: red;
+  background: white;
+  border-radius: 50px;
+  padding: 0 10px;
+}
